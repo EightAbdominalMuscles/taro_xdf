@@ -1,0 +1,47 @@
+// 公用变量
+$font_size_title: 24px;
+$font_size_base: 16px;
+$font_size_min: 14px;
+$font_size_minimum: 12px;
+$font_size_middle: 16px;
+$font_size_max: 26px;
+
+$font_col_base: #3C3837;
+$catalogue_font_col: #491D1C;
+$bgCol: #ccc;
+$bgColMask: rgba(58,64,108, .8);
+$bgColRed: #B56E7B;
+$bgColYellow: #D6BE98;
+
+// 公用方法
+%center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%clear {
+    clear:both;
+    height:0;
+    overflow:hidden;
+}
+// 混合器
+// 背景
+@mixin svg-bg($bg) {
+    background: $bg;
+    background-size: 100% 100%;
+}
+// 定位居中
+@mixin position-auto($w: true, $h: false) {
+    position: absolute;
+    @if $h and $w {
+        top:  50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }@else if $h {
+        top:  50%;
+        transform: translateY(-50%);
+    } @else if $w {
+        left:  50%;
+        transform: translateX(-50%);
+    }
+}

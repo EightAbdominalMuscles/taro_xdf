@@ -1,0 +1,28 @@
+@import "@/custom.scss";
+@import "@/publicV.scss";
+#app {
+    position: relative;
+    font-size: $font_size_base;
+    font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Arial, sans-serif!important;
+  .taro_page {
+    & > div {
+      height: 100vh;
+    }
+  }
+}
+// 全局
+// 返回按钮
+.go_back {
+    position: absolute;
+    top: 23px;
+    left: 30px;
+    width: 17px;
+    height: 29px;
+    background: url("./static/images/btn_global_back.svg") no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+.go_back:active,
+.img_btn:active {
+  animation: rubberBand 0.3s 1;
+}

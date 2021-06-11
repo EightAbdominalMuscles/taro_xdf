@@ -1,0 +1,27 @@
+.soundwords {
+  width: 100%;
+  color: #0C0C0C;
+  .soundwords_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .soundwords_ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 22px;
+    .soundwords_li {
+      text-align: center;
+      margin-left: 2px;
+
+    }
+  }
+  .soundwords_symbol {
+    width: 34px;
+    min-height: 20px;
+    text-align: center;
+    font-size: 14px;
+  }
+}
