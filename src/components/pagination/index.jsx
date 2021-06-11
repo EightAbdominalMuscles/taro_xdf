@@ -13,7 +13,7 @@ export default class Pagination extends Taro.Component {
       Taro.showToast({ icon: "none", mask: true, title: "到头了!", duration: 800});
       console.log('到头了')
     } else {
-      handleChange(newPage)
+      handleChange(newPage, -1)
     }
   }
   goNext () {
@@ -23,7 +23,7 @@ export default class Pagination extends Taro.Component {
       Taro.showToast({ icon: "none", mask: true, title: "没有更多了!", duration: 800});
       console.log('没有更多了')
     }else {
-      handleChange(newPage)
+      handleChange(newPage, 1)
     }
     
   }
