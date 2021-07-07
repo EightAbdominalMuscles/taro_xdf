@@ -38,20 +38,20 @@ export default class SingleChoice extends Taro.Component {
         {
           answerType === 1 && (
             <View>
-              <View className={`${defaultClass} ${defaultIconClass === '' && (item.currentOption === item.optionSeq1 ? selectClass: '')}}`} onClick={() => {selectClick && selectClick(item.id, item.optionSeq1, item)}}>
-                {defaultIconClass && <View className={`${defaultIconClass} ${(item.currentOption === item.optionSeq1 ? selectClass: '')}}`}></View>}
+              <View className={`${defaultClass} ${defaultIconClass === '' && (item.currentOption === item.optionSeq1 ? selectClass: '')}`} onClick={() => {selectClick && selectClick(item.id, item.optionSeq1, item)}}>
+                {defaultIconClass && <View className={`${defaultIconClass} ${(item.currentOption === item.optionSeq1 ? selectClass: '')}`}></View>}
                 {item.option1}
               </View>
-              <View className={`${defaultClass} ${defaultIconClass === '' && (item.currentOption === item.optionSeq2 ? selectClass: '')}}`} onClick={() => {selectClick && selectClick(item.id, item.optionSeq2, item)}}>
-                {defaultIconClass && <View className={`${defaultIconClass} ${(item.currentOption === item.optionSeq2 ? selectClass: '')}}`}></View>}
+              <View className={`${defaultClass} ${defaultIconClass === '' && (item.currentOption === item.optionSeq2 ? selectClass: '')}`} onClick={() => {selectClick && selectClick(item.id, item.optionSeq2, item)}}>
+                {defaultIconClass && <View className={`${defaultIconClass} ${(item.currentOption === item.optionSeq2 ? selectClass: '')}`}></View>}
                 {item.option2}
               </View>
-              <View className={`${defaultClass} ${defaultIconClass === '' && (item.currentOption === item.optionSeq3 ? selectClass: '')}}`} onClick={() => {selectClick && selectClick(item.id, item.optionSeq3, item)}}>
-                {defaultIconClass && <View className={`${defaultIconClass} ${(item.currentOption === item.optionSeq3 ? selectClass: '')}}`}></View>}
+              <View className={`${defaultClass} ${defaultIconClass === '' && (item.currentOption === item.optionSeq3 ? selectClass: '')}`} onClick={() => {selectClick && selectClick(item.id, item.optionSeq3, item)}}>
+                {defaultIconClass && <View className={`${defaultIconClass} ${(item.currentOption === item.optionSeq3 ? selectClass: '')}`}></View>}
                 {item.option3}
               </View>
-              <View className={`${defaultClass} ${defaultIconClass === '' && (item.currentOption === item.optionSeq4 ? selectClass: '')}}`} onClick={() => {selectClick && selectClick(item.id, item.optionSeq4, item)}}>
-                {defaultIconClass && <View className={`${defaultIconClass} ${(item.currentOption === item.optionSeq4 ? selectClass: '')}}`}></View>}
+              <View className={`${defaultClass} ${defaultIconClass === '' && (item.currentOption === item.optionSeq4 ? selectClass: '')}`} onClick={() => {selectClick && selectClick(item.id, item.optionSeq4, item)}}>
+                {defaultIconClass && <View className={`${defaultIconClass} ${(item.currentOption === item.optionSeq4 ? selectClass: '')}`}></View>}
                 {item.option4}
               </View>
             </View>
