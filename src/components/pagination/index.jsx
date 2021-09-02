@@ -29,10 +29,12 @@ export default class Pagination extends Taro.Component {
   }
   render() {
     const {prevDom, nextDom} = this.props
+    const newPrevDom = Taro.cloneElement(prevDom, {onClick: () => this.goPrev()})
+    const newNextDom = Taro.cloneElement(nextDom, {onClick: () => this.goNext()})
     return (
       <View className='pagination'>
-        <View onClick={() => { this.goPrev() }}>{prevDom}</View>
-        <View  onClick={() => { this.goNext() }}>{nextDom}</View>
+        {newPrevDom}
+        {newNextDom}
       </View>
     );
   }
