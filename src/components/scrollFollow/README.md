@@ -20,6 +20,8 @@
 | value | 值 | Number | 一般是当前下表 |
 | className | 自定义Class | String ｜ JSON | - |
 | activeClass | 自定义选中 | String ｜ JSON | - |
+
+### 例子
 ```jsx
 import ScrollFollow from '@/components/scrollFollow'
 import ScrollFollowItem from '@/components/scrollFollowItem'
