@@ -7,6 +7,8 @@
         playAudio 音频播放      
         soundwords 拼音和文字显示
         singleChoice 单选题组件
+        scrollFollow 滚动跟随 - scroll 说明看文件夹下 md
+        scrollFollowItem 滚动跟随 - scrollItem
         没有样式要求。。。。具体结果可以看result.png
     mock 本地数据存储
     api 前端数据处理 相当于接口

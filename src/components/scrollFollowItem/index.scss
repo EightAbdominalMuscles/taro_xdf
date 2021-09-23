@@ -1,0 +1,10 @@
+.scrollFollowItem {
+  color: #180D09;
+  font-weight: 400;
+  font-size: 20px;
+
+  &.active {
+    font-weight: bold;
+    font-size: 24px;
+  }
+}
