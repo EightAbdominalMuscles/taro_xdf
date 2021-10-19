@@ -22,6 +22,11 @@ export default class ScrollFollow extends Taro.Component {
     }
     return
   }
+  componentDidUpdate(prevProps, prevState) {
+    if (this.props.defaultValue !== prevProps.defaultValue) {
+      this.setScrollTop(this.props.defaultValue)
+    }
+  }
   // 在scrollFollow中设置滚动条
   setScrollTop (value) {
     // 滚动组件 居中的位置
@@ -32,11 +37,10 @@ export default class ScrollFollow extends Taro.Component {
     const liDom = this.layoutDom.current.props.children[value-1].dom
     const scrollTop = liDom.offsetTop - liDom.offsetHeight - scroolCenter
     this.setState({
-      scrollTop: liDom.offsetTop - liDom.offsetHeight - scroolCenter
+      scrollTop
     })
   }
   handleSelect = (data) => {
-    this.setScrollTop(data.value)
     const {handleSelect} = this.props
     handleSelect(data)
   }
