@@ -70,7 +70,7 @@ export default class play_audio extends Taro.Component {
         const {imgWidth, playIcon, PauseIcon, isCover = true} = this.props;
         return (
             isCover ? 
-            <View>
+            <View className='img_btn'>
                 {playStatus ?
                     <Image src={PauseIcon || btnPause} style={{
                         width: imgWidth ? `${imgWidth}` : '5vh',

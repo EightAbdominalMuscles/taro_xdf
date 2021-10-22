@@ -10,17 +10,17 @@ export default class ScrollFollow extends Taro.Component {
     defaultValue: '',
     scrollTop: 0
   }
-  componentWillMount () {
+  componentDidMount () {
     const {defaultValue} = this.props
-    this.setState({
-      defaultValue
-    })
+    setTimeout(() => {
+      this.setScrollTop(defaultValue)
+    }, 300)
   }
   static getDerivedStateFromProps(props, state) {
     if (props.defaultValue !== state.defaultValue) {
       return {defaultValue: props.defaultValue}
     }
-    return
+    return null
   }
   componentDidUpdate(prevProps, prevState) {
     if (this.props.defaultValue !== prevProps.defaultValue) {
